@@ -39,7 +39,7 @@ Finally clone this repo and run this within the repo:
 ### Inference 
 We give two demos for researchers to reproduce our work.
 1. Please download the [BaiDuYun](https://pan.baidu.com/s/1SuveHraSzv_Q9LhhOxxS4A) (code:ffgq).
-2. Unzip the [4-gram.arpa.tar.gz] under the root directory, and put the [pretrained_wav2Letter.pth.tar] under the "model_libri" folder.
+2. Unzip the [4-gram.arpa.tar.gz] under the root directory, and put the [pretrained_wav2Letter.pth.tar] under the *model_libri* folder.
 3. 
 Run the following code to attack from original1 to target1:
 
@@ -50,4 +50,4 @@ Run the following code to attack from original2 to target2:
 
     $ python attack_stage1.py --orig-path ./data/original/original2.wav --target-path ./data/target/target2.txt
     $ python attack_stage2.py --audio-path ./generated_stage1/original2_to_target2_stage1.wav --orig-path ./data/original/original2.wav --target-path ./data/target/target2.txt 
-4. The generated adversarial audios are under generated_stage2 folder.
+4. The generated adversarial audios are under *generated_stage2* folder.
