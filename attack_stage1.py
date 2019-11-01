@@ -178,7 +178,7 @@ class Attacker(object):
             # if args.printSilence:
             #     print()
             #     print(sigindex_maxnal.shape)
-            #     print("20个：", signal[index_max:index_max+20])
+            #     print("20：", signal[index_max:index_max+20])
 
             mfcc = pytorch_mfcc.MFCC(samplerate=self.sample_rate,winlen=self.window_size,winstep=self.window_stride,numcep=13,nfilt=26,nfft=512,lowfreq=0,highfreq=None,preemph=0,ceplifter=22,appendEnergy=False).cuda()
             mfccs = mfcc(signal)
