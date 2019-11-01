@@ -50,5 +50,4 @@ We give two demos for researchers to reproduce our work.
 
     $ python attack_stage1.py --orig-path ./data/original/original2.wav --target-path ./data/target/target2.txt
     $ python attack_stage2.py --audio-path ./generated_stage1/original2_to_target2_stage1.wav --orig-path ./data/original/original2.wav --target-path ./data/target/target2.txt
-
 4. the generated adversarial audios are under generated_stage2 folder.
