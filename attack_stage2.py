@@ -35,9 +35,9 @@ import scipy.signal
 parser = argparse.ArgumentParser(description='Wav2Letter attacks')
 parser.add_argument('--max-iterations', default=10000, type=int, help='maximum number of iteration for attacks')
 parser.add_argument('--target', default=None, type=str, help='target sentence for attacks')
-parser.add_argument('--audio-path', default='/media/zht/disk2/new_wav2letter_finetune/generated_ldz/5e-06/0.9/adv_61-70968-0006_61-70968-0002_5e-06_0.9_100000_11942.wav', type=str, help='input audio path for attacks')#0.8 3029reload
-parser.add_argument('--orig-path', default='./data/LibriSpeech_dataset/test_clean/wav/61-70968-0021.wav', type=str, help='original audio path for attacks')
-parser.add_argument('--target-path', default='./data/LibriSpeech_dataset/test_clean/txt/61-70968-0059.txt', type=str, help='original txt path for attacks')
+parser.add_argument('--audio-path', default=None, type=str, help='input audio path for attacks')#0.8 3029reload
+parser.add_argument('--orig-path', default=None, type=str, help='original audio path for attacks')
+parser.add_argument('--target-path', default=None, type=str, help='original txt path for attacks')
 parser.add_argument('--model-path', default='./model_libri/pretrained_wav2Letter.pth.tar',
                     help='Path to model file created by training')
 parser.add_argument('--cuda', default=True, action="store_true", help='Use cuda to test model')
@@ -178,7 +178,7 @@ class Attacker(object):
             # if args.printSilence:
             #     print()
             #     print(sigindex_maxnal.shape)
-            #     print("20个：", signal[index_max:index_max+20])
+            #     print("20：", signal[index_max:index_max+20])
 
             mfcc = pytorch_mfcc.MFCC(samplerate=self.sample_rate,winlen=self.window_size,winstep=self.window_stride,numcep=13,nfilt=26,nfft=512,lowfreq=0,highfreq=None,preemph=0,ceplifter=22,appendEnergy=False).cuda()
             mfccs = mfcc(signal)
