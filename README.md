@@ -40,7 +40,8 @@ Finally clone this repo and run this within the repo:
 We give two demos for researchers to reproduce our work.
 1. Please download the [BaiDuYun](https://pan.baidu.com/s/1SuveHraSzv_Q9LhhOxxS4A) (code:ffgq).
 2. Unzip the [4-gram.arpa.tar.gz] under the root directory, and put the [pretrained_wav2Letter.pth.tar] under the "model_libri" folder.
-3. Run the following code to attack from original1 to target1:
+3. 
+Run the following code to attack from original1 to target1:
 
     $ python attack_stage1.py --orig-path ./data/original/original1.wav --target-path ./data/target/target1.txt
     $ python attack_stage2.py --audio-path ./generated_stage1/original1_to_target1_stage1.wav --orig-path ./data/original/original1.wav --target-path ./data/target/target1.txt
