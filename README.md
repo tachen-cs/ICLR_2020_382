@@ -50,4 +50,4 @@ Run the following code to attack from original2 to target2:
 
     $ python attack_stage1.py --orig-path ./data/original/original2.wav --target-path ./data/target/target2.txt
     $ python attack_stage2.py --audio-path ./generated_stage1/original2_to_target2_stage1.wav --orig-path ./data/original/original2.wav --target-path ./data/target/target2.txt 
-4. The generated adversarial audios are under *generated_stage2* folder.
+4. The generated adversarial audios are under the *generated_stage2* folder.
