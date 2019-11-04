@@ -5,7 +5,7 @@ Code for ICLR_2020 paper (under review)
 **[[Paper](https://openreview.net/forum?id=HJgFW6EKvH)]** <br />
 
 ### Installation
-Install PyTorch if you haven't already.
+Install PyTorch if you haven't already. We currently implement our experiments on pytorch 1.1.0 with cuda9 and python3.7.
 
 Install this fork for Warp-CTC bindings:
 
