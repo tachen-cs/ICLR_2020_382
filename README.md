@@ -20,6 +20,8 @@ Install this fork for Warp-CTC bindings:
 
 Note:If you encounter the problem of ***ModuleNotFoundError: No module named 'warpctc_pytorch._warp_ctc'***, you can copy the *~/anaconda2/envs/envs_name/lib/python3.7/site-packages/warpctc_pytorch-0.1-py3.7-linux-x86_64.egg/warpctc_pytorch* to the root directory of this project *ICLR_2020_382/*.
 
+    $ cp -r ~/warpctc_pytorch .
+
 Install pytorch audio:
 
     $ sudo apt-get install sox libsox-dev libsox-fmt-all
